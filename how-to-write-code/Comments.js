@@ -8,5 +8,6 @@
    to have
    multi-line
    comments. */
+// Another comment for good practice!//
 
    console.log("Comments make your code more readable by others.");
