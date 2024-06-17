@@ -5,7 +5,7 @@
 // Given the values for crewStatus and computerStatus, should launchReady be true or false after the check?  
 // Is the program behaving as expected?
 
-let launchReady = false;
+let launchReady = true;
 // let fuelLevel = 17000;
 let crewStatus = true;
 let computerStatus = 'green';
@@ -17,8 +17,8 @@ let computerStatus = 'green';
 //    console.log('WARNING: Insufficient fuel!');
 //    launchReady = false;
 // }
-
-if (crewStatus && computerStatus === 'green'){
+console.log(launchReady);
+if (crewStatus === true && computerStatus === 'green'){
    console.log('Crew & computer cleared.');
    launchReady = true;
 } else {
