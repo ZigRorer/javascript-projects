@@ -4,13 +4,27 @@ let protoArray3 = "space delimited string";
 let protoArray4 = "Comma-spaces, might, require, typing, caution";
 
 strings = [protoArray1, protoArray2, protoArray3, protoArray4];
+determineDelimiter(strings);
+//1)
+function determineDelimiter(str) {
+	if(str.includes(', ')) {
+		console.log('The given string has spaces and commas.');
+	} else if (str.includes(';')) {
+		console.log('The given string has semi colons.');
+	} else if (str.includes(',')) {
+		console.log('The given string has commas.');
+	} else {
+		console.log('The given string has spaces.')
+	}
+}
 
 //2) 
 function reverseCommas() {
 	//TODO: 1. create and instantiate your variables.
 	let check;
-	let output;
+	//let output;
 	//TODO: 2. write the code required for this step
+	let output = strings[0].split(',').reverse().join(',');
 
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
 	return output;
@@ -19,9 +33,9 @@ function reverseCommas() {
 //3)
 function semiDash() {
 	let check;
-	let output;
+	//let output;
 //TODO: write the code required for this step
-
+let output = strings[1].split(';').sort().join('-');
   
 	return output;
 }
@@ -29,18 +43,18 @@ function semiDash() {
 //4)
 function reverseSpaces() {
 	let check;
-	let output;
+	//let output;
   //TODO: write the code required for this step
-
+let output = strings[2].split(' ').sort().reverse().join(' ');
 	return output;
 }
 
 //5)
 function commaSpace() {
 	let check;
-	let output;
+	//let output;
 	//TODO: write the code required for this step
-  
+  let output = strings[3].split(', ').sort().join(',');
 	return output;
 }
 
