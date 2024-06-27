@@ -44,5 +44,16 @@ console.log(strReversed);
   let evens = [];
   let odds = [];
 
-  
-  //Having a hard time with this, should return when ready.
+  for (let i = 0; i < startingArr.length; i++) {
+    if (startingArr[i] % 2 === 0) {
+      evens.push(startingArr[i]);
+    }
+  }
+    console.log(evens);
+
+  for (let i = 0; i < startingArr.length; i++) {
+    if (startingArr[i] % 2 != 0) {
+      odds.push(startingArr[i]);
+    }
+  }
+    console.log(odds);
