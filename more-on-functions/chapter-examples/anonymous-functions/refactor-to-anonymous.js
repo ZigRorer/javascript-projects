@@ -1,4 +1,4 @@
-function reverse(str) {
+let reverseStr = function() {
   let lettersArray = str.split('');
   let reversedLettersArray = lettersArray.reverse();
   return reversedLettersArray.join('');

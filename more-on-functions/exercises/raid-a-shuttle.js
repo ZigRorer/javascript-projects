@@ -28,7 +28,15 @@ console.log("Hold status: " + holdStatus(cargoHold));
  */
  
 //a). Define an anonymous function and set it equal to a variable with a normal, non-suspicious name. The function takes one parameter. This will be the fuel level on the shuttle.
-
+let nonSusFunction = function(a) {
+  if (checkFuel(a) === 'green') {
+    return a - 100001;
+  } else if (checkFuel(a) === 'yellow') {
+    return a - 50001
+  } else {
+    return a;
+  }
+};
 //b). You must siphon off fuel without alerting the TAs. Inside your function, you want to reduce the fuel level as much as possible WITHOUT changing the color returned by the checkFuel function.
 
 //c). Once you figure out how much fuel to pump out, return that value.
