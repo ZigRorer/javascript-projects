@@ -9,6 +9,16 @@
         <h1>Flight Simulator</h1>
         <p id="statusReport">The shuttle is on the ground</p>
         <button id = "liftoffButton">Take off</button>
+        <script>
+            function takeOff() {
+        document.getElementById("main-text").innerHTML += "liftoffButton";
+        console.log("Take off");
+    }
+    let button = document.getElementById("liftoffButton");
+    button.addEventListener('click', event => {
+   paragraph.innerHTML = 'Houston! We have liftoff!';
+});
+        </script>
         <button id = "abortMission">Abort mission</button>
     </body>
 </html>
